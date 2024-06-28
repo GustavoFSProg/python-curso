@@ -1,0 +1,6 @@
+sudo apt install python3-pip
+
+pip install streamlit
+
+streamlit run dashboards.py
+

@@ -1,0 +1,17 @@
+﻿sudo apt install python3-pip
+
+pip install streamlit
+
+streamlit run dashboards.py
+
+
+
+INSTALL ANACONDA:
+
+1 - baixar o arquivo : Anaconda3-2023.09-0-Linux-x86_64.sh
+
+2 – Instalar no terminal na pasta Downloads:
+
+    bash Anaconda3-2023.09-0-Linux-x86_64.sh
+
+
