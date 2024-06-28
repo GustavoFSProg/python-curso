@@ -8,9 +8,9 @@ import pyperclip
 
 
 
-# st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
-st.set_page_config(page_title="Meu Site Streamlit")
+# st.set_page_config(page_title="Meu Site Streamlit")
 
 bb = "BANCO DO BRASIL:   BBAS3.SA"
 petrobras = "PETROBRAS:   PETR4.SA"
@@ -18,10 +18,11 @@ petrobras = "PETROBRAS:   PETR4.SA"
 bb
 petrobras
 
-acao = st.text_input("Código da Acão:")
+# acao = st.text_input("Código da Acão:")
 
 # acao = input("Codigo da Acao: ")
 # acao = "PETR4.SA"
+acao = "BBAS3.SA"
 
 dados = yfinance.Ticker(acao).history("6mo")
 
