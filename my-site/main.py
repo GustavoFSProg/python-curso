@@ -1,4 +1,7 @@
 import streamlit as st
+
+from PIL import Image
+import os
 # import pandas as pd
 
 st.set_page_config(page_title="Meu Site Streamlit")
@@ -24,3 +27,28 @@ with st.container():
     # dados = dados[-num_dias:]
     # st.area_chart(dados, x="Data", y="Contratos")
 
+
+# Solicita o caminho da imagem ao usuário
+path = ("comida1.jpg")
+
+# Verifica se o arquivo existe
+if os.path.isfile(path):
+    # Abre a imagem
+    img = Image.open(path)
+    # Agora você pode trabalhar com a imagem
+else:
+    print("Arquivo não encontrado. Por favor, tente novamente.")
+
+img
+
+# def click
+
+st.button("Reset",'reset',help="ajuda sobre o botao", type="primary")
+
+# if st.button('Clique Aqui'):
+#     st.write('Clicou!')
+
+# else:
+#     st.write('Reset')
+
+#     st.write(st.session_state)
